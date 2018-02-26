@@ -52,4 +52,32 @@
   school       = {Univ. Grenoble Alpes},
   year         = 2018,
   month        = 2,
+  abstract     = {This thesis covers the topic of large-scale data processing systems,
+and more precisely three complementary approaches: the design of a
+system to perform prediction about computer failures through the
+analysis of monitoring data; the routing of data in a real-time system
+looking at correlations between message fields to favor locality; and
+finally a novel framework to design data transformations using
+directed graphs of blocks.
+
+Through the lenses of the Smart Support Center project, we design a
+scalable architecture, to store time series reported by monitoring
+engines, which constantly check the health of computer systems. We use
+this data to perform predictions, and detect potential problems before
+they arise.
+
+We then dive in routing algorithms for stream processing systems, and
+develop a layer to route messages more efficiently, by avoiding hops
+between machines. For that purpose, we identify in real-time the
+correlations which appear in the fields of these messages, such as
+hashtags and their geolocation, for example in the case of tweets. We
+use these correlations to create routing tables which favor the
+co-location of actors handling these messages.
+
+Finally, we present λ-blocks, a novel programming framework to compute
+data processing jobs without writing code, but rather by creating
+graphs of blocks of code. The framework is fast, and comes with
+batteries included: block libraries, plugins, and APIs to extend
+it. It is also able to manipulate computation graphs, for
+optimization, analysis, verification, or any other purposes.}
 }
