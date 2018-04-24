@@ -93,5 +93,25 @@ optimization, analysis, verification, or any other purposes.}
   keywords={},
   doi={},
   ISSN={},
-  month={April}
+  month={April},
+  abstract={Monitoring thousands of machines and services in a datacenter produces
+a lot of time series points, giving a general idea of the health of a
+cluster. However, there is a lack of tools to further exploit this
+data, for instance for prediction purposes. We propose to apply linear
+regression algorithms to predict the future behavior of monitored
+systems and anticipate downtimes, giving system administrators the
+information they need ahead of the problems arising. This problem is
+quite challenging when dealing with a high number of monitoring
+metrics, given our three main constraints: a low number of false
+positives (thus blacklisting volatile metrics), a high availability
+(due to the nature of monitoring systems), and a good scalability. We
+implemented and evaluated such a system using production metrics from
+Coservit, a company specialized in infrastructure monitoring.
+
+The results we obtained are promising: sub-second latency per
+predicted metric per CPU core, for the entire end-to-end process. This
+latency is constant when scaling the system up to 125 cores on 4
+machines dedicated for monitoring predictions, and the performances
+don't decrease with time: during 15 minutes, it is able to handle more
+than 100~000 monitoring metrics.}
 }
