@@ -115,3 +115,46 @@ machines dedicated for monitoring predictions, and the performances
 don't decrease with time: during 15 minutes, it is able to handle more
 than 100~000 monitoring metrics.}
 }
+
+@inproceedings{2018-bigdatacongress-lambdablocks,
+  author={Caneill, Matthieu and De Palma, Noël},
+  booktitle={2018 IEEE International Congress on Big Data (BigData Congress)},
+  title={λ-blocks: Data Processing with Topologies of Blocks},
+  year={2018},
+  volume={},
+  number={},
+  pages={9-16},
+  keywords={},
+  doi={10.1109/BigDataCongress.2018.00009},
+  ISSN={},
+  month={July},
+  abstract={We present and evaluate λ-blocks, a novel
+framework to write data processing programs in a descriptive
+manner. The main idea behind this framework is to separate the
+semantics of a program from its implementation. For that purpose, we
+define a data schema, able to describe, parameterize, compose, and
+link together blocks of code, storing a directed graph which
+represents the data transformations. Along this data schema lies an
+execution engine, able to read such a program, give feedback on
+potential errors, and finally execute it. In our reference
+implementation, a computation graph is described in YAML, linking
+together vertices of Python code blocks defined in separate libraries.
+
+The advantages of this approach are manyfold: faster, less error-prone
+programming; reuse of code blocks; computation graph manipulations;
+mixing of different specialized libraries; and finally middleware for
+potential front-ends (such as graphical interfaces) and back-ends
+(other execution engines). The main goal of λ-blocks is to
+bring complex data processing computations to non-specialists, by
+providing a simple abstraction over large-scale data processing
+systems.
+
+Our contributions lie within a description of the schema, and an
+analysis of the reference execution engine. For that purpose we
+describe λ-blocks' internals and its main abstractions
+(blocks and topologies), and evaluate the framework performances. We
+measured the framework overhead to have a maximum value of 50~ms, a
+negligible amount compared to the average duration of data processing
+jobs.
+}
+}
